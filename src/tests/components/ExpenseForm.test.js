@@ -91,3 +91,4 @@ test('should set focused on focus change', () => {
     expect(wrapper.state('focused')).toEqual(true);
 });
 
+
