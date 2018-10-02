@@ -1,8 +1,7 @@
 import React from 'react';
-import ExpenseForm from './ExpenseForm';
 import { connect } from 'react-redux';
-import { addExpense } from '../actions/expenses';
 import ExpenseForm from './ExpenseForm';
+import { addExpense } from '../actions/expenses';
 
 export class AddExpense extends React.Component {
     onSubmit = (expense) => {
@@ -13,7 +12,9 @@ export class AddExpense extends React.Component {
         return (
             <div>
                 <h1>Add Expense</h1>
-                <ExpenseForm onSubmit={this.onSubmit} />
+                <ExpenseForm 
+                    onSubmit={this.onSubmit} 
+                />
             </div>
         );
     }
