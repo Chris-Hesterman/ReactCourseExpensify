@@ -119,7 +119,7 @@ exports[`should render ExpenseForm correctly 1`] = `
 </div>
 `;
 
-exports[`should render ExpenseForm with expense data 1`] = `
+exports[`should render ExpenseForm correctly with expense data 1`] = `
 <div>
   <form
     onSubmit={[Function]}

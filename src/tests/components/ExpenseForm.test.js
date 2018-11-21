@@ -9,7 +9,7 @@ test('should render ExpenseForm correctly', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test('should render ExpenseForm with expense data', () => {
+test('should render ExpenseForm correctly with expense data', () => {
     const wrapper = shallow(<ExpenseForm expense={expenses[1]}/>);
     expect(wrapper).toMatchSnapshot();
 });

@@ -6,7 +6,7 @@ test('should set up removeExpense action object', () => {
     expect(action).toEqual({ type: 'REMOVE_EXPENSE', id: '123abc'})
 });
 
-test('should set up addExpense action object', () => {
+test('should set up editExpense action object', () => {
     const action = editExpense('123dcf', {note: 'fun with testing'});
 
     expect(action).toEqual({ 
