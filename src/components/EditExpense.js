@@ -22,7 +22,7 @@ export class EditExpense extends React.Component {
                     expense={this.props.expense}
                     onSubmit={this.onSubmit}
                 />
-                <button onClick={this. onRemove}>
+                <button onClick={this.onRemove}>
                     Remove
                 </button>
             </div>
@@ -36,7 +36,7 @@ const mapStateToProps = (state, props) => {
     };
 };
 
-const mapDispatchToProps = (dispatch, props) => ({
+const mapDispatchToProps = (dispatch) => ({
     editExpense: (id, expense) => dispatch(editExpense(id, expense)),
     removeExpense: (data) => dispatch(removeExpense(data))
 });
