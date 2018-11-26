@@ -11,10 +11,10 @@ module.exports = (env) => {
         output: {
             path:path.join(__dirname, 'public'),
             filename: 'bundle.js'
-        },
-        mode: 'development',
+            },
         module: {
-            rules: [{
+            rules: [
+                {
                 loader: 'babel-loader',
                 test: /\.js$/,
                 exclude: /node_modules/
@@ -35,9 +35,9 @@ module.exports = (env) => {
                         sourceMap: true
                         }
                     }
-                ]    
-                
-            }]
+                ]   
+                }
+            ]
         },
         plugins: [
             CSSExtract
