@@ -1,6 +1,6 @@
-/public/bundle.js
+/public/dist/
 /node_modules/
 /src/playground/
-/public/bundle.js.map
-/public/styles.css
-/public/styles.css.map
+
+
+
