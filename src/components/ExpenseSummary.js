@@ -10,7 +10,7 @@ export const ExpenseSummary = (props) => {
 
     return (
         <div>
-            <h1>Viewing { props.expenseCount }
+            <h1>Viewing { props.expensesCount }
                 { expenseWord }
                 totalling { formattedExpensesTotal } 
             </h1>
@@ -18,8 +18,6 @@ export const ExpenseSummary = (props) => {
     );
 };
             
-        
-
 const mapStateToProps = (state) => {
     const visibleExpenses = selectExpenses(state.expenses, state.filters);
     return {
